@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    height: 60px;
+}
+
+.navbar-links, .navbar-icons {
+    width: 35%;
+
+}
+.navbar-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: navy;
+}
+.navbar-links ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 0.8em;
+}
+.navbar-icons ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+.navbar-links ul li:hover {
+    color: red;
+    border-bottom: 3px solid navy;
+    transition: all .5s;
+}
+.main {
+    width: 100%;
+    height: 800px;
+    background-image: url('https://images.samsung.com/au/smartphones/galaxy-s10/images/galaxy-s10-share-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main p {
+    color: wheat;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 0px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 25%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+.card-1 {
+background-color:  antiquewhite
+}
+
+.card-2 {
+background-color: aqua   
+}
+.card-3 {
+background-color: blue
+}
+.card-4 {
+background-color: brown
+}
+
+.card p{
+    margin: 15px 0px;
+}
+@media(max-width: 1000px) {
+    .navbar-links, .navbar-icons{
+        display: none;
+    }
+
+    .navbar-title{
+        width: 100%;
+        text-align: center;
+    }
+    .card {
+        width: 50px:
+    }
+    .card-3 {
+        background-color: black;
+    }
+    .card-4 {
+        background-color: blue;
+    }
+}
+
+.navbar-menu-button {
+    font-size: 1.5em;
+    margin-left: 20px;
+    display: inline;
+}
+@media(max-width 550px)

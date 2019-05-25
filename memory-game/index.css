@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+
+}
+
+.app {
+    margin: 50px auto;
+    height: 700px;
+    width: 700px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.app div {
+    background-color: grey;
+    border-radius: 10px;
+    transition: all .5s;
+    font-size: 8em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app div i {
+    display: none;
+}
+
+.app div:hover {
+    background-color: blue;
+}
